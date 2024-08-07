@@ -6,5 +6,4 @@ class CapuletEngine(Engine):
         self.last_service_mileage = last_service_mileage
 
     def needs_service(self):
-        print(f"Current mileage: {self.current_mileage}, Last service mileage: {self.last_service_mileage}")
         return self.current_mileage - self.last_service_mileage > 30000
